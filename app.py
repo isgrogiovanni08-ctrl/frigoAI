@@ -67,7 +67,7 @@ with tab1:
       pass
     return ""
 
-  st.dataframe(df.style.applymap(color_expiry, subset=["Scadenza"]), use_container_width=True)
+  st.dataframe(df.style.map(color_expiry, subset=["Scadenza"]), use_container_width=True)
   
   if st.button("Aggiungi prodotto manuale"):
     st.info("Funzionalità di inserimento rapido attiva.")
